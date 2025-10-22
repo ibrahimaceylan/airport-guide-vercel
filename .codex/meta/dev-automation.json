@@ -1,0 +1,8 @@
+{
+  "hook": "pre-dev",
+  "trigger": "yarn dev",
+  "action": "scripts/hooks/pre-dev.sh",
+  "description": "Automatically verifies the developer environment setup before running the local server.",
+  "enabled": true,
+  "lastUpdated": "Sun Oct 19 18:56:45 BST 2025"
+}

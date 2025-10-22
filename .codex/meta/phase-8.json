@@ -1,0 +1,13 @@
+{
+  "phase": "8",
+  "title": "Deployment & CMS Enhancements",
+  "branch": "phase-8-deployment-cms",
+  "status": "in-progress",
+  "deliverables": [
+    "Vercel deployment playbook with env variable checklist",
+    "Prisma content versioning models and migrations",
+    "Admin UI for viewing and restoring content versions",
+    "Version-aware content API updates",
+    "scripts/verify-phase8.sh"
+  ]
+}

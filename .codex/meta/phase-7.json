@@ -1,0 +1,12 @@
+{
+  "phase": "7",
+  "title": "Dynamic Content Management (CRUD + Role-Based Admin)",
+  "branch": "phase-7-dynamic-content",
+  "status": "completed",
+  "deliverables": [
+    "Prisma models for homepage sections",
+    "CRUD API for /api/content/[section]",
+    "Admin modal UI (Hero example) with validation",
+    "Role-based access for Admin and Editor"
+  ]
+}

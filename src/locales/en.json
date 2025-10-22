@@ -1,0 +1,547 @@
+{
+  "dashboard": {
+    "titleAdmin": "Admin Dashboard",
+    "titleEditor": "Editor Dashboard",
+    "subtitleAdmin": "Operational overview for Istanbul Airport",
+    "subtitleEditor": "Curate, schedule, and monitor airport content",
+    "flights": "Flights",
+    "flightsSection": "Flight Departures",
+    "flightsQueue": "Flights Content Queue",
+    "transport": "Transport",
+    "transportSection": "At the Airport",
+    "transportModules": "Transport Modules",
+    "content": "Content",
+    "signOut": "Sign out",
+    "partners": "Partner Campaigns",
+    "language": "Language",
+    "flightsLoading": "Loading flight data...",
+    "flightsError": "Failed to load flights.",
+    "flightsEmpty": "No flights to display.",
+    "flightsUpdated": "Last updated at {time}",
+    "transportLoading": "Loading transport data...",
+    "transportError": "Failed to load transport updates.",
+    "transportEmpty": "No transport data available.",
+    "transportUpdated": "Updated: {time}",
+    "transportStatus": {
+      "active": "Service running normally",
+      "inactive": "Service temporarily unavailable"
+    },
+    "flightsTable": {
+      "flight": "Flight",
+      "airline": "Airline",
+      "destination": "Destination",
+      "departure": "Departure",
+      "status": "Status"
+    }
+  },
+  "homepage": {
+    "planner": {
+      "eyebrow": "Airport companion",
+      "title": "Plan your journey through Istanbul Airport",
+      "subtitle": "Track flights, find transport, and uncover on-site highlights in one place.",
+      "greeting": "Welcome to Istanbul",
+      "searchLabel": "Search for a flight",
+      "searchPlaceholder": "Flight number, destination or airline",
+      "supporting": "Look up any flight or jump straight to departures and arrivals.",
+      "searchCta": "Search flights",
+      "shortcutsLabel": "Quick shortcuts",
+      "secondaryHeading": "Top airport services hand-picked for today.",
+      "secondaryOverflow": "Explore more services in the airport guide.",
+      "actions": {
+        "arrivals": {
+          "label": "View arrivals",
+          "href": "https://www.istairport.com/en/passenger/flight-status?tab=arrivals",
+          "icon": "plane"
+        },
+        "departures": {
+          "label": "View departures",
+          "href": "https://www.istairport.com/en/passenger/flight-status?tab=departures",
+          "icon": "plane-takeoff"
+        }
+      },
+      "secondary": [
+        {
+          "label": "Transport planner",
+          "href": "https://www.istairport.com/en/passenger/transport",
+          "icon": "transport"
+        },
+        {
+          "label": "Airport map",
+          "href": "https://www.istairport.com/en/passenger/airport-map",
+          "icon": "map"
+        }
+      ],
+      "transport": {
+        "label": "Book airport transfer",
+        "icon": "bus-front",
+        "fallbackCta": "Reserve shuttle"
+      },
+      "heroImageAlt": "Travellers inside Istanbul Airport terminal",
+      "operationsLabel": "Live operations",
+      "quickLinksLabel": "Quick links",
+      "alertsLabel": "Instant alerts"
+    },
+    "status": {
+      "title": "Status snapshot",
+      "description": "Live operational headlines you need before heading to the airport.",
+      "updated": "Updated {time}",
+      "fallback": {
+        "departures": {
+          "title": "Daily departures",
+          "unit": "flights"
+        },
+        "security": {
+          "title": "Security wait",
+          "unit": "min",
+          "trend": "Check again soon"
+        },
+        "parking": {
+          "title": "Parking availability",
+          "unit": "capacity",
+          "trend": "Updated hourly"
+        }
+      }
+    },
+    "journey": {
+      "beforeTitle": "Before you fly",
+      "beforeDescription": "Prepare faster with check-in, baggage, and premium services.",
+      "arrivalTitle": "On arrival",
+      "arrivalDescription": "Find passport control, transfers, and currency support.",
+      "partnerTag": "Partner"
+    },
+    "transport": {
+      "title": "Transport & parking",
+      "description": "Choose the fastest way into Istanbul with live service updates.",
+      "labels": {
+        "statusDetail": "Status note",
+        "nextDeparture": "Next departure",
+        "frequency": "Frequency",
+        "bookingLead": "Book ahead for guaranteed seats or parking.",
+        "book": "Powered by Istanbul Airport transport partners."
+      },
+      "highlight": {
+        "title": "Airport transfer spotlight",
+        "cta": "Limited partner offer"
+      },
+      "banner": {
+        "label": "Partner transfer",
+        "cta": "Book transfer"
+      }
+    },
+    "pretravel": {
+      "title": "Pre-travel essentials",
+      "subtitle": "Sort transfers, connectivity, and flights before you leave home.",
+      "actions": [
+        {
+          "label": "Book airport transfer",
+          "icon": "bus-front",
+          "match": "transport"
+        },
+        {
+          "label": "Buy eSIM for Turkey",
+          "icon": "globe",
+          "match": "sim",
+          "fallbackUrl": "https://www.esimturkey.com/"
+        },
+        {
+          "label": "Reserve train into Istanbul",
+          "icon": "tram-front",
+          "match": "metro",
+          "fallbackUrl": "https://www.metro.istanbul/en"
+        },
+        {
+          "label": "Find best flight deals",
+          "icon": "plane-takeoff",
+          "match": "flight",
+          "fallbackUrl": "https://www.skyscanner.net/"
+        }
+      ]
+    },
+    "timeline": {
+      "steps": [
+        {
+          "title": "Plan",
+          "description": "Search flights, arrange airport transfer, and download your boarding pass."
+        },
+        {
+          "title": "Travel",
+          "description": "Follow live transport updates and breeze through security with Fast Track."
+        },
+        {
+          "title": "Arrive",
+          "description": "Find currency exchange, onward travel, and lounge access when you land."
+        }
+      ]
+    },
+    "highlights": {
+      "title": "Dining & shopping highlights",
+      "description": "Curated picks for food, retail therapy, and dwell-time inspiration.",
+      "meta": {
+        "price": "From",
+        "duration": "Plan for"
+      },
+      "filters": [
+        {
+          "id": "all",
+          "label": "All"
+        },
+        {
+          "id": "breakfast",
+          "label": "Breakfast"
+        },
+        {
+          "id": "family",
+          "label": "Family"
+        },
+        {
+          "id": "luxury",
+          "label": "Luxury"
+        },
+        {
+          "id": "dutyfree",
+          "label": "Duty free deals"
+        }
+      ],
+      "spotlightLabel": "Spotlight"
+    },
+    "alerts": {
+      "title": "Alerts & announcements",
+      "description": "Stay informed about security, maintenance, and travel notices.",
+      "empty": "No active alerts at the moment."
+    },
+    "flights": {
+      "title": "Departures snapshot",
+      "description": "See the next departures leaving Istanbul. Times are shown in local time.",
+      "empty": "No departures scheduled right now.",
+      "cta": {
+        "label": "View full departures board",
+        "href": "/flights"
+      },
+      "headers": {
+        "flight": "Flight",
+        "destination": "Destination",
+        "departure": "Departure",
+        "status": "Status"
+      }
+    },
+    "partners": {
+      "slotLabel": "Partner spotlight",
+      "quickLinkLabel": "Partner offer",
+      "bannerLabel": "Featured partner",
+      "sectionTitle": "Exclusive partner offers",
+      "sectionSubtitle": "Discover limited airline deals and duty free savings tailored for Istanbul Airport travellers.",
+      "viewAll": "View all partner offers",
+      "carousel": {
+        "previous": "Previous offer",
+        "next": "Next offer"
+      }
+    },
+    "bands": {
+      "planAhead": {
+        "eyebrow": "Plan ahead",
+        "title": "Plan before you travel",
+        "description": "Secure your transport, documents, and itinerary essentials before leaving home."
+      },
+      "planJourney": {
+        "eyebrow": "On the day",
+        "title": "Navigate your journey to the airport",
+        "description": "Track transport status and step-by-step guidance to reach your gate smoothly."
+      },
+      "atAirport": {
+        "eyebrow": "Discover Istanbul Airport",
+        "title": "Shop, dine, and relax at the terminal",
+        "description": "Browse curated highlights, partner offers, and essential services once you arrive."
+      },
+      "travelUpdates": {
+        "eyebrow": "Stay informed",
+        "title": "Live alerts and flight updates",
+        "description": "Monitor operational notices and departures so you can adjust plans quickly."
+      }
+    }
+  },
+  "flightsPage": {
+    "eyebrow": "Flight search",
+    "all": {
+      "title": "All upcoming departures",
+      "description": "Showing {count} departures in the current schedule."
+    },
+    "results": {
+      "title": "Results for \"{query}\"",
+      "description": "Showing {count} matching flights.",
+      "empty": "No flights found for \"{query}\". Try another flight number or destination."
+    },
+    "form": {
+      "label": "Search flights",
+      "placeholder": "Flight number, destination, or status",
+      "cta": "Search flights"
+    },
+    "back": "Back to homepage"
+  },
+  "contentManager": {
+    "title": "Content Manager",
+    "subtitle": "Manage homepage modules with live CRUD actions.",
+    "viewHistory": "View History",
+    "addNew": "Add New",
+    "loading": "Loading...",
+    "noRecords": "No records found.",
+    "saveError": "Unable to save content. Please try again.",
+    "deleteError": "Unable to delete content.",
+    "restoreError": "Unable to restore this version.",
+    "deleteConfirm": "Delete this entry?",
+    "loadError": "Failed to load content.",
+    "actions": {
+      "edit": "Edit",
+      "delete": "Delete"
+    },
+    "table": {
+      "id": "ID",
+      "primaryField": "Primary Field",
+      "actions": "Actions"
+    }
+  },
+  "versionHistory": {
+    "title": "Version History",
+    "loading": "Loading version history...",
+    "error": "Unable to load version history.",
+    "empty": "No history found for this section yet.",
+    "createdAt": "Created: {time}",
+    "publishedAt": "Published: {time}",
+    "byAuthor": "By {author}",
+    "unknownAuthor": "Unknown author",
+    "actions": {
+      "CREATED": "Created",
+      "UPDATED": "Updated",
+      "DELETED": "Deleted",
+      "RESTORED": "Restored"
+    },
+    "restore": "Restore",
+    "restoring": "Restoring...",
+    "close": "Close"
+  },
+  "partnerManager": {
+    "title": "Partner Campaigns",
+    "subtitle": "Manage airline and retail promos across the homepage.",
+    "create": "New campaign",
+    "edit": "Edit campaign",
+    "editAction": "Edit",
+    "deleteAction": "Delete",
+    "deleteConfirm": "Delete campaign \"{name}\"? This cannot be undone.",
+    "empty": "No partner campaigns yet. Create one to highlight airline deals or retail offers.",
+    "loading": "Loading campaigns...",
+    "loadError": "Failed to load campaigns.",
+    "deleteError": "Unable to delete campaign. Please try again.",
+    "saveError": "Unable to save campaign. Please verify the input values.",
+    "placements": {
+      "HERO_TILE": "Hero spotlight",
+      "QUICK_LINK": "Quick link tile",
+      "BANNER": "Banner strip",
+      "FEATURED_SECTION": "Featured section card",
+      "FOOTER_TILE": "Footer tile"
+    },
+    "status": {
+      "DRAFT": "Draft",
+      "LIVE": "Live",
+      "PAUSED": "Paused",
+      "ARCHIVED": "Archived"
+    },
+    "table": {
+      "campaign": "Campaign",
+      "locale": "Locale",
+      "placements": "Placements",
+      "status": "Status",
+      "schedule": "Schedule"
+    }
+  },
+  "layout": {
+    "header": {
+      "brand": {
+        "name": "Istanbul Airport",
+        "tagline": "Gateway to the world, every hour.",
+        "href": "/en"
+      },
+      "nav": [
+        {
+          "label": "Flights",
+          "href": "https://www.istairport.com/en/passenger/flight-status"
+        },
+        {
+          "label": "Getting here",
+          "href": "https://www.istairport.com/en/passenger/transport"
+        },
+        {
+          "label": "At the airport",
+          "href": "https://www.istairport.com/en/passenger/at-the-airport"
+        },
+        {
+          "label": "Shop & dine",
+          "href": "https://www.istairport.com/en/passenger/shopping"
+        },
+        {
+          "label": "Help & support",
+          "href": "https://www.istairport.com/en/passenger/faq"
+        }
+      ],
+      "utility": [
+        {
+          "label": "Travel alerts",
+          "href": "#alerts",
+          "icon": "alert-triangle"
+        },
+        {
+          "label": "Contact",
+          "href": "https://www.istairport.com/en/passenger/contact",
+          "icon": "phone"
+        },
+        {
+          "label": "Accessibility",
+          "href": "https://www.istairport.com/en/passenger/accessibility",
+          "icon": "accessibility"
+        },
+        {
+          "label": "Language",
+          "href": "#language",
+          "icon": "globe"
+        }
+      ],
+      "cta": {
+        "label": "Book parking",
+        "href": "https://www.istairport.com/en/passenger/parking"
+      },
+      "instantAlerts": {
+        "label": "Instant alerts",
+        "viewAll": {
+          "label": "View all",
+          "href": "#alerts"
+        }
+      }
+    },
+    "footer": {
+      "brand": {
+        "name": "Istanbul Airport Guide",
+        "description": "Plan every leg of your Istanbul journey with live operations, transport options, and curated airport highlights."
+      },
+      "newsletter": {
+        "title": "Stay in the know",
+        "description": "Get operational alerts, partner offers, and itinerary reminders straight to your inbox.",
+        "cta": "Subscribe",
+        "disclaimer": "We respect your inbox. Unsubscribe anytime."
+      },
+      "social": [
+        {
+          "label": "Instagram",
+          "href": "https://www.instagram.com/igairport",
+          "icon": "instagram"
+        },
+        {
+          "label": "Twitter",
+          "href": "https://twitter.com/igairport",
+          "icon": "twitter"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/@igairport",
+          "icon": "youtube"
+        }
+      ],
+      "columns": [
+        {
+          "title": "Plan your trip",
+          "links": [
+            {
+              "label": "Flight status",
+              "href": "https://www.istairport.com/en/passenger/flight-status",
+              "icon": "plane"
+            },
+            {
+              "label": "Reserve parking",
+              "href": "https://www.istairport.com/en/passenger/parking",
+              "icon": "parking-circle"
+            },
+            {
+              "label": "Fast Track security",
+              "href": "https://www.istairport.com/en/passenger/fast-track",
+              "icon": "shield-check"
+            }
+          ]
+        },
+        {
+          "title": "Getting here",
+          "links": [
+            {
+              "label": "Airport buses",
+              "href": "https://www.istairport.com/en/passenger/transport/bus",
+              "icon": "bus-front"
+            },
+            {
+              "label": "Metro & rail",
+              "href": "https://www.metro.istanbul/en",
+              "icon": "tram-front"
+            },
+            {
+              "label": "Taxi & ride apps",
+              "href": "https://www.istairport.com/en/passenger/taxi",
+              "icon": "car"
+            }
+          ]
+        },
+        {
+          "title": "At the airport",
+          "links": [
+            {
+              "label": "Terminal maps",
+              "href": "https://www.istairport.com/en/passenger/airport-map",
+              "icon": "map"
+            },
+            {
+              "label": "Lounges",
+              "href": "https://www.istairport.com/en/passenger/lounge-services",
+              "icon": "armchair"
+            },
+            {
+              "label": "Shopping & dining",
+              "href": "https://www.istairport.com/en/passenger/shopping",
+              "icon": "shopping-bag"
+            }
+          ]
+        },
+        {
+          "title": "Support",
+          "links": [
+            {
+              "label": "Help centre",
+              "href": "https://www.istairport.com/en/passenger/faq",
+              "icon": "life-buoy"
+            },
+            {
+              "label": "Lost & found",
+              "href": "https://www.istairport.com/en/passenger/lost-found",
+              "icon": "search"
+            },
+            {
+              "label": "Customer care",
+              "href": "https://www.istairport.com/en/passenger/contact",
+              "icon": "message-circle"
+            }
+          ]
+        }
+      ],
+      "legal": {
+        "rights": "© {year} Istanbul Airport. All rights reserved.",
+        "links": [
+          {
+            "label": "Privacy policy",
+            "href": "https://www.istairport.com/en/privacy-policy"
+          },
+          {
+            "label": "Terms of use",
+            "href": "https://www.istairport.com/en/terms-of-use"
+          },
+          {
+            "label": "Accessibility",
+            "href": "https://www.istairport.com/en/passenger/accessibility"
+          }
+        ]
+      }
+    }
+  }
+}

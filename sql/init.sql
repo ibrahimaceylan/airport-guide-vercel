@@ -1,0 +1,9 @@
+-- Database Initialization Script for Phase 1
+CREATE TABLE IF NOT EXISTS User (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT,
+  email TEXT UNIQUE NOT NULL,
+  password TEXT NOT NULL,
+  role TEXT DEFAULT 'USER',
+  createdAt DATETIME DEFAULT CURRENT_TIMESTAMP
+);

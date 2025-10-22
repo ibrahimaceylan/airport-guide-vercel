@@ -1,0 +1,13 @@
+{
+  "phase": "9",
+  "title": "Partnerships & Commerce Integrations",
+  "branch": "phase-9-partnerships",
+  "status": "completed",
+  "deliverables": [
+    "Partner campaign CMS models",
+    "Tracked outbound redirect handler",
+    "Homepage promo slots and partner landing pages",
+    "Analytics dashboard for partner clicks",
+    "scripts/verify-phase9.sh"
+  ]
+}

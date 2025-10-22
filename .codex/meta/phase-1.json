@@ -1,0 +1,14 @@
+{
+  "phase": "1",
+  "name": "Single-Site Setup",
+  "branch": "phase-1-single-site-setup",
+  "verifiedBy": "scripts/verify-phase1.sh",
+  "status": "in-progress",
+  "objectives": [
+    "Initialize Next.js + Tailwind project",
+    "Set up basic layout and homepage",
+    "Implement auth routes",
+    "Configure Prisma schema and SQLite",
+    "Add Codex automation scripts"
+  ]
+}

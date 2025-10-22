@@ -1,0 +1,547 @@
+{
+  "dashboard": {
+    "titleAdmin": "لوحة التحكم",
+    "titleEditor": "لوحة المحرر",
+    "subtitleAdmin": "نظرة تشغيلية للمطار في إسطنبول",
+    "subtitleEditor": "قم بإدارة وجدولة ومتابعة محتوى المطار",
+    "flights": "الرحلات",
+    "flightsSection": "مغادرات الرحلات",
+    "flightsQueue": "قائمة محتوى الرحلات",
+    "transport": "النقل",
+    "transportSection": "في المطار",
+    "transportModules": "وحدات النقل",
+    "content": "المحتوى",
+    "signOut": "تسجيل الخروج",
+    "partners": "حملات الشركاء",
+    "language": "اللغة",
+    "flightsLoading": "جاري تحميل بيانات الرحلات...",
+    "flightsError": "تعذر تحميل الرحلات.",
+    "flightsEmpty": "لا توجد رحلات للعرض.",
+    "flightsUpdated": "آخر تحديث في {time}",
+    "transportLoading": "جاري تحميل بيانات المواصلات...",
+    "transportError": "تعذر تحميل تحديثات المواصلات.",
+    "transportEmpty": "لا تتوفر بيانات للمواصلات.",
+    "transportUpdated": "تم التحديث: {time}",
+    "transportStatus": {
+      "active": "الخدمة تعمل بشكل طبيعي",
+      "inactive": "الخدمة غير متاحة مؤقتًا"
+    },
+    "flightsTable": {
+      "flight": "الرحلة",
+      "airline": "شركة الطيران",
+      "destination": "الوجهة",
+      "departure": "الإقلاع",
+      "status": "الحالة"
+    }
+  },
+  "homepage": {
+    "planner": {
+      "eyebrow": "مرافق المطار",
+      "title": "خطط رحلتك في مطار إسطنبول",
+      "subtitle": "تابع الرحلات، اكتشف خيارات النقل واستعد لتجربة سلسة في المطار.",
+      "greeting": "مرحباً بك في إسطنبول",
+      "searchLabel": "ابحث عن رحلة",
+      "searchPlaceholder": "رقم الرحلة أو الوجهة أو شركة الطيران",
+      "supporting": "اعثر على أي رحلة أو انتقل مباشرة إلى قوائم المغادرة والوصول.",
+      "searchCta": "ابحث عن الرحلات",
+      "shortcutsLabel": "اختصارات سريعة",
+      "secondaryHeading": "أهم خدمات المطار المختارة لليوم.",
+      "secondaryOverflow": "اكتشف المزيد من الخدمات في دليل المطار.",
+      "actions": {
+        "arrivals": {
+          "label": "عرض الرحلات القادمة",
+          "href": "https://www.istairport.com/en/passenger/flight-status?tab=arrivals",
+          "icon": "plane"
+        },
+        "departures": {
+          "label": "عرض الرحلات المغادرة",
+          "href": "https://www.istairport.com/en/passenger/flight-status?tab=departures",
+          "icon": "plane-takeoff"
+        }
+      },
+      "secondary": [
+        {
+          "label": "مخطط النقل",
+          "href": "https://www.istairport.com/en/passenger/transport",
+          "icon": "transport"
+        },
+        {
+          "label": "خريطة المطار",
+          "href": "https://www.istairport.com/en/passenger/airport-map",
+          "icon": "map"
+        }
+      ],
+      "transport": {
+        "label": "احجز نقل المطار",
+        "icon": "bus-front",
+        "fallbackCta": "احجز خدمة النقل"
+      },
+      "heroImageAlt": "ركاب في مطار إسطنبول",
+      "operationsLabel": "تشغيل مباشر",
+      "quickLinksLabel": "روابط سريعة",
+      "alertsLabel": "تنبيهات فورية"
+    },
+    "status": {
+      "title": "ملخص الحالة",
+      "description": "أهم المعلومات التشغيلية قبل التوجه إلى المطار.",
+      "updated": "تم التحديث {time}",
+      "fallback": {
+        "departures": {
+          "title": "عدد الرحلات المغادرة اليوم",
+          "unit": "رحلة"
+        },
+        "security": {
+          "title": "مدة الانتظار في الأمن",
+          "unit": "دقيقة",
+          "trend": "راجع مرة أخرى قريبًا"
+        },
+        "parking": {
+          "title": "توفر مواقف السيارات",
+          "unit": "السعة",
+          "trend": "يتم التحديث كل ساعة"
+        }
+      }
+    },
+    "journey": {
+      "beforeTitle": "قبل الرحلة",
+      "beforeDescription": "استعد بسرعة أكبر عبر تسجيل الوصول والحقائب والخدمات المميزة.",
+      "arrivalTitle": "عند الوصول",
+      "arrivalDescription": "اعثر على الجوازات، مكاتب التحويل والصرافة بسهولة.",
+      "partnerTag": "شريك"
+    },
+    "transport": {
+      "title": "النقل ومواقف السيارات",
+      "description": "اختر أسرع طريق إلى إسطنبول مع تحديثات مباشرة للخدمات.",
+      "labels": {
+        "statusDetail": "ملاحظة الحالة",
+        "nextDeparture": "المغادرة التالية",
+        "frequency": "التكرار",
+        "bookingLead": "احجز مسبقًا لضمان مقعد أو موقف سيارة.",
+        "book": "البيانات مقدمة من شركاء النقل في مطار إسطنبول."
+      },
+      "highlight": {
+        "title": "عرض نقل المطار",
+        "cta": "عرض شريك محدود"
+      },
+      "banner": {
+        "label": "نقل الشريك",
+        "cta": "احجز النقل"
+      }
+    },
+    "pretravel": {
+      "title": "أساسيات ما قبل السفر",
+      "subtitle": "احجز النقل، وابقَ متصلاً، وابحث عن أفضل الرحلات قبل الإقلاع.",
+      "actions": [
+        {
+          "label": "احجز نقل المطار",
+          "icon": "bus-front",
+          "match": "transport"
+        },
+        {
+          "label": "اشترِ eSIM لتركيا",
+          "icon": "globe",
+          "match": "sim",
+          "fallbackUrl": "https://www.esimturkey.com/"
+        },
+        {
+          "label": "احجز القطار إلى إسطنبول",
+          "icon": "tram-front",
+          "match": "metro",
+          "fallbackUrl": "https://www.metro.istanbul/en"
+        },
+        {
+          "label": "اعثر على أفضل عروض الرحلات",
+          "icon": "plane-takeoff",
+          "match": "flight",
+          "fallbackUrl": "https://www.skyscanner.net/"
+        }
+      ]
+    },
+    "timeline": {
+      "steps": [
+        {
+          "title": "خطط",
+          "description": "ابحث عن الرحلة، احجز نقل المطار، وحمّل بطاقة الصعود."
+        },
+        {
+          "title": "سافر",
+          "description": "تابع تحديثات النقل الحية واجتز الأمن بسرعة مع المسار السريع."
+        },
+        {
+          "title": "الوصول",
+          "description": "اعثر فوراً على صرف العملات، ونقل المتابعة، وصالات الاستراحة عند الوصول."
+        }
+      ]
+    },
+    "highlights": {
+      "title": "أبرز خيارات الطعام والتسوق",
+      "description": "اختيارات منسقة للطعام والتسوق والاسترخاء داخل الصالات.",
+      "meta": {
+        "price": "السعر يبدأ من",
+        "duration": "المدة المتوقعة"
+      },
+      "filters": [
+        {
+          "id": "all",
+          "label": "الكل"
+        },
+        {
+          "id": "breakfast",
+          "label": "فطور"
+        },
+        {
+          "id": "family",
+          "label": "عائلي"
+        },
+        {
+          "id": "luxury",
+          "label": "فاخر"
+        },
+        {
+          "id": "dutyfree",
+          "label": "عروض السوق الحرة"
+        }
+      ],
+      "spotlightLabel": "مميز"
+    },
+    "alerts": {
+      "title": "التنبيهات والإعلانات",
+      "description": "تابع التنبيهات الأمنية وأخبار الصيانة والتنقل.",
+      "empty": "لا توجد تنبيهات حالية."
+    },
+    "flights": {
+      "title": "ملخص المغادرات",
+      "description": "اطّلع على الرحلات المغادرة التالية من إسطنبول. الأوقات معروضة بالتوقيت المحلي.",
+      "empty": "لا توجد رحلات مغادرة في الوقت الحالي.",
+      "cta": {
+        "label": "عرض جدول المغادرات الكامل",
+        "href": "/flights"
+      },
+      "headers": {
+        "flight": "الرحلة",
+        "destination": "الوجهة",
+        "departure": "الإقلاع",
+        "status": "الحالة"
+      }
+    },
+    "partners": {
+      "slotLabel": "عرض الشركاء",
+      "quickLinkLabel": "عرض خاص",
+      "bannerLabel": "شريك مميز",
+      "sectionTitle": "عروض خاصة من شركائنا",
+      "sectionSubtitle": "اكتشف عروض شركات الطيران والتسوق الحصرية لزوار مطار إسطنبول.",
+      "viewAll": "عرض جميع العروض",
+      "carousel": {
+        "previous": "العرض السابق",
+        "next": "العرض التالي"
+      }
+    },
+    "bands": {
+      "planAhead": {
+        "eyebrow": "خطط مسبقًا",
+        "title": "استعد قبل رحلتك",
+        "description": "أكمل ترتيبات النقل والوثائق الأساسية قبل مغادرة المنزل."
+      },
+      "planJourney": {
+        "eyebrow": "يوم السفر",
+        "title": "وجّه رحلتك إلى المطار",
+        "description": "تابع حالة المواصلات والإرشادات خطوة بخطوة للوصول إلى بوابتك بسلاسة."
+      },
+      "atAirport": {
+        "eyebrow": "اكتشف مطار إسطنبول",
+        "title": "تسوّق وتناول الطعام واسترح في الصالات",
+        "description": "استكشف أبرز التجارب والعروض والشركاء عند وصولك."
+      },
+      "travelUpdates": {
+        "eyebrow": "ابقَ على اطلاع",
+        "title": "تنبيهات حية وتحديثات الرحلات",
+        "description": "راقب الإشعارات التشغيلية والمغادرات لتعديل خططك بسرعة."
+      }
+    }
+  },
+  "flightsPage": {
+    "eyebrow": "بحث عن رحلة",
+    "all": {
+      "title": "جميع الرحلات المغادرة القادمة",
+      "description": "عرض {count} من الرحلات المغادرة القادمة."
+    },
+    "results": {
+      "title": "النتائج لـ \"{query}\"",
+      "description": "عرض {count} من الرحلات المطابقة.",
+      "empty": "لا توجد رحلات مطابقة لـ \"{query}\". جرّب رقماً أو وجهة أخرى."
+    },
+    "form": {
+      "label": "ابحث عن الرحلات",
+      "placeholder": "رقم الرحلة أو الوجهة أو الحالة",
+      "cta": "بحث عن الرحلات"
+    },
+    "back": "العودة إلى الصفحة الرئيسية"
+  },
+  "contentManager": {
+    "title": "مدير المحتوى",
+    "subtitle": "قم بإدارة وحدات الصفحة الرئيسية باستخدام عمليات CRUD مباشرة.",
+    "viewHistory": "عرض السجل",
+    "addNew": "إضافة جديد",
+    "loading": "جارٍ التحميل...",
+    "noRecords": "لا توجد سجلات.",
+    "saveError": "تعذّر حفظ المحتوى. يرجى المحاولة مرة أخرى.",
+    "deleteError": "تعذّر حذف المحتوى.",
+    "restoreError": "تعذّر استعادة هذا الإصدار.",
+    "deleteConfirm": "هل تريد حذف هذا السجل؟",
+    "loadError": "تعذّر تحميل المحتوى.",
+    "actions": {
+      "edit": "تعديل",
+      "delete": "حذف"
+    },
+    "table": {
+      "id": "المعرّف",
+      "primaryField": "الحقل الرئيسي",
+      "actions": "الإجراءات"
+    }
+  },
+  "versionHistory": {
+    "title": "سجل الإصدارات",
+    "loading": "جارٍ تحميل سجل الإصدارات...",
+    "error": "تعذّر تحميل سجل الإصدارات.",
+    "empty": "لا يوجد سجل لهذا القسم بعد.",
+    "createdAt": "تم الإنشاء: {time}",
+    "publishedAt": "تم النشر: {time}",
+    "byAuthor": "بواسطة {author}",
+    "unknownAuthor": "مستخدم غير معروف",
+    "actions": {
+      "CREATED": "تم الإنشاء",
+      "UPDATED": "تم التحديث",
+      "DELETED": "تم الحذف",
+      "RESTORED": "تمت الاستعادة"
+    },
+    "restore": "استعادة",
+    "restoring": "جارٍ الاستعادة...",
+    "close": "إغلاق"
+  },
+  "partnerManager": {
+    "title": "حملات الشركاء",
+    "subtitle": "إدارة عروض شركات الطيران والمتاجر عبر الصفحة الرئيسية.",
+    "create": "حملة جديدة",
+    "edit": "تعديل الحملة",
+    "editAction": "تعديل",
+    "deleteAction": "حذف",
+    "deleteConfirm": "هل تريد حذف الحملة \"{name}\"؟ لا يمكن التراجع عن ذلك.",
+    "empty": "لا توجد حملات للشركاء بعد. أنشئ حملة لعرض عروض شركات الطيران أو التسوق.",
+    "loading": "جارٍ تحميل الحملات...",
+    "loadError": "تعذر تحميل الحملات.",
+    "deleteError": "تعذر حذف الحملة. يرجى المحاولة مرة أخرى.",
+    "saveError": "تعذر حفظ الحملة. يرجى التحقق من البيانات.",
+    "placements": {
+      "HERO_TILE": "بلاطة البطل",
+      "QUICK_LINK": "رابط سريع",
+      "BANNER": "شريط بانر",
+      "FEATURED_SECTION": "قسم مميز",
+      "FOOTER_TILE": "بلاطة التذييل"
+    },
+    "status": {
+      "DRAFT": "مسودة",
+      "LIVE": "نشط",
+      "PAUSED": "متوقف مؤقتًا",
+      "ARCHIVED": "مؤرشف"
+    },
+    "table": {
+      "campaign": "الحملة",
+      "locale": "اللغة",
+      "placements": "المواضع",
+      "status": "الحالة",
+      "schedule": "الجدول الزمني"
+    }
+  },
+  "layout": {
+    "header": {
+      "brand": {
+        "name": "مطار إسطنبول",
+        "tagline": "بوابتك إلى العالم على مدار الساعة.",
+        "href": "/ar"
+      },
+      "nav": [
+        {
+          "label": "الرحلات",
+          "href": "https://www.istairport.com/en/passenger/flight-status"
+        },
+        {
+          "label": "الوصول إلى المطار",
+          "href": "https://www.istairport.com/en/passenger/transport"
+        },
+        {
+          "label": "في المطار",
+          "href": "https://www.istairport.com/en/passenger/at-the-airport"
+        },
+        {
+          "label": "التسوق وتناول الطعام",
+          "href": "https://www.istairport.com/en/passenger/shopping"
+        },
+        {
+          "label": "المساعدة والدعم",
+          "href": "https://www.istairport.com/en/passenger/faq"
+        }
+      ],
+      "utility": [
+        {
+          "label": "تنبيهات السفر",
+          "href": "#alerts",
+          "icon": "alert-triangle"
+        },
+        {
+          "label": "الاتصال",
+          "href": "https://www.istairport.com/en/passenger/contact",
+          "icon": "phone"
+        },
+        {
+          "label": "إمكانية الوصول",
+          "href": "https://www.istairport.com/en/passenger/accessibility",
+          "icon": "accessibility"
+        },
+        {
+          "label": "اللغة",
+          "href": "#language",
+          "icon": "globe"
+        }
+      ],
+      "cta": {
+        "label": "احجز موقف السيارات",
+        "href": "https://www.istairport.com/en/passenger/parking"
+      },
+      "instantAlerts": {
+        "label": "تنبيهات فورية",
+        "viewAll": {
+          "label": "عرض الكل",
+          "href": "#alerts"
+        }
+      }
+    },
+    "footer": {
+      "brand": {
+        "name": "دليل مطار إسطنبول",
+        "description": "خطط لكل مرحلة من رحلتك في إسطنبول مع بيانات تشغيلية مباشرة وخيارات نقل وتجارب مختارة داخل المطار."
+      },
+      "newsletter": {
+        "title": "ابقَ على اطلاع",
+        "description": "استلم التنبيهات التشغيلية والعروض والشركاء مباشرة إلى بريدك الإلكتروني.",
+        "cta": "اشترك",
+        "disclaimer": "نحترم بريدك الإلكتروني ويمكنك إلغاء الاشتراك في أي وقت."
+      },
+      "social": [
+        {
+          "label": "Instagram",
+          "href": "https://www.instagram.com/igairport",
+          "icon": "instagram"
+        },
+        {
+          "label": "Twitter",
+          "href": "https://twitter.com/igairport",
+          "icon": "twitter"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/@igairport",
+          "icon": "youtube"
+        }
+      ],
+      "columns": [
+        {
+          "title": "خطط رحلتك",
+          "links": [
+            {
+              "label": "حالة الرحلات",
+              "href": "https://www.istairport.com/en/passenger/flight-status",
+              "icon": "plane"
+            },
+            {
+              "label": "احجز موقف السيارات",
+              "href": "https://www.istairport.com/en/passenger/parking",
+              "icon": "parking-circle"
+            },
+            {
+              "label": "مسار سريع للأمن",
+              "href": "https://www.istairport.com/en/passenger/fast-track",
+              "icon": "shield-check"
+            }
+          ]
+        },
+        {
+          "title": "الوصول إلى المطار",
+          "links": [
+            {
+              "label": "حافلات المطار",
+              "href": "https://www.istairport.com/en/passenger/transport/bus",
+              "icon": "bus-front"
+            },
+            {
+              "label": "المترو والقطارات",
+              "href": "https://www.metro.istanbul/en",
+              "icon": "tram-front"
+            },
+            {
+              "label": "سيارات الأجرة وتطبيقات التنقل",
+              "href": "https://www.istairport.com/en/passenger/taxi",
+              "icon": "car"
+            }
+          ]
+        },
+        {
+          "title": "في المطار",
+          "links": [
+            {
+              "label": "خرائط الصالات",
+              "href": "https://www.istairport.com/en/passenger/airport-map",
+              "icon": "map"
+            },
+            {
+              "label": "صالات الانتظار",
+              "href": "https://www.istairport.com/en/passenger/lounge-services",
+              "icon": "armchair"
+            },
+            {
+              "label": "التسوق وتناول الطعام",
+              "href": "https://www.istairport.com/en/passenger/shopping",
+              "icon": "shopping-bag"
+            }
+          ]
+        },
+        {
+          "title": "الدعم",
+          "links": [
+            {
+              "label": "مركز المساعدة",
+              "href": "https://www.istairport.com/en/passenger/faq",
+              "icon": "life-buoy"
+            },
+            {
+              "label": "المفقودات",
+              "href": "https://www.istairport.com/en/passenger/lost-found",
+              "icon": "search"
+            },
+            {
+              "label": "خدمة العملاء",
+              "href": "https://www.istairport.com/en/passenger/contact",
+              "icon": "message-circle"
+            }
+          ]
+        }
+      ],
+      "legal": {
+        "rights": "© {year} مطار إسطنبول. جميع الحقوق محفوظة.",
+        "links": [
+          {
+            "label": "سياسة الخصوصية",
+            "href": "https://www.istairport.com/en/privacy-policy"
+          },
+          {
+            "label": "شروط الاستخدام",
+            "href": "https://www.istairport.com/en/terms-of-use"
+          },
+          {
+            "label": "إمكانية الوصول",
+            "href": "https://www.istairport.com/en/passenger/accessibility"
+          }
+        ]
+      }
+    }
+  }
+}

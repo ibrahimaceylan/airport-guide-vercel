@@ -1,0 +1,42 @@
+{
+  // =====================================
+  // VSCode Workspace Settings
+  // Istanbul Airport Guide (v2)
+  // =====================================
+
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": ["javascript", "typescript", "typescriptreact", "json"],
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "files.exclude": {
+    "node_modules": true,
+    ".next": true,
+    "out": true,
+    "build": true,
+    "dist": true,
+    ".codex/cache": true
+  },
+  "git.showIgnored": false,
+  "files.eol": "\n",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "tailwindCSS.includeLanguages": {
+    "typescriptreact": "html"
+  },
+  "tailwindCSS.experimental.classRegex": [
+    "tw`([^`]*)",
+    "tw=\"([^\"]*)",
+    "tw={\"([^\"}]*)",
+    "className=\"([^\"]*)",
+    "className={\"([^\"}]*)"
+  ],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

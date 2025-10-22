@@ -1,0 +1,13 @@
+{
+  "phase": "5",
+  "title": "Localization UI Polish + Language Switcher",
+  "branch": "phase-5-language-switcher",
+  "docs": "docs/phase-5.md",
+  "verify_script": "scripts/verify-phase5.sh",
+  "status": "in-progress",
+  "objectives": [
+    "Add language switcher to Topbar",
+    "Improve RTL/LTR spacing and typography",
+    "Enhance localization UX polish"
+  ]
+}

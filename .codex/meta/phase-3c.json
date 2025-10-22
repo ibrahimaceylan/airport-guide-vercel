@@ -1,0 +1,9 @@
+{
+  "phase": "3C",
+  "branch": "phase-3-flights-transport",
+  "title": "Force Light Base (Tailwind Config + Global Reset)",
+  "dependsOn": "phase-3b",
+  "docs": "docs/phase-3.md",
+  "status": "in-progress",
+  "createdAt": "Sun 19 Oct 2025 22:50:57 BST"
+}

@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "[Phase 1-B Verification]"
+test -f ./src/lib/prisma.ts && echo "✅ prisma.ts found"
+test -f ./src/lib/auth/auth.ts && echo "✅ auth.ts found"
+test -f ./src/lib/auth/roles.ts && echo "✅ roles.ts found"
+test -f ./src/middleware.ts && echo "✅ middleware found"
+echo "→ Checking Yarn dependencies"
+yarn list --pattern next-auth | grep next-auth && echo "✅ next-auth installed"
+yarn list --pattern bcryptjs | grep bcryptjs && echo "✅ bcryptjs installed"
+echo "Verification complete."

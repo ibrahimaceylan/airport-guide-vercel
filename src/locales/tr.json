@@ -1,0 +1,547 @@
+{
+  "dashboard": {
+    "titleAdmin": "Yönetici Paneli",
+    "titleEditor": "Editör Paneli",
+    "subtitleAdmin": "İstanbul Havalimanı için operasyonel görünüm",
+    "subtitleEditor": "Havalimanı içeriğini planlayın, zamanlayın ve takip edin",
+    "flights": "Uçuşlar",
+    "flightsSection": "Uçuş Kalkışları",
+    "flightsQueue": "Uçuş İçerik Kuyruğu",
+    "transport": "Ulaşım",
+    "transportSection": "Havalimanında",
+    "transportModules": "Ulaşım Modülleri",
+    "content": "İçerik",
+    "signOut": "Çıkış yap",
+    "partners": "Partner Kampanyaları",
+    "language": "Dil",
+    "flightsLoading": "Uçuş verileri yükleniyor...",
+    "flightsError": "Uçuşlar yüklenemedi.",
+    "flightsEmpty": "Gösterilecek uçuş yok.",
+    "flightsUpdated": "Son güncelleme {time}",
+    "transportLoading": "Ulaşım verileri yükleniyor...",
+    "transportError": "Ulaşım verileri yüklenemedi.",
+    "transportEmpty": "Ulaşım verisi bulunamadı.",
+    "transportUpdated": "Güncellendi: {time}",
+    "transportStatus": {
+      "active": "Servis normal şekilde çalışıyor",
+      "inactive": "Servis geçici olarak kullanılamıyor"
+    },
+    "flightsTable": {
+      "flight": "Uçuş",
+      "airline": "Havayolu",
+      "destination": "Varış Noktası",
+      "departure": "Kalkış",
+      "status": "Durum"
+    }
+  },
+  "homepage": {
+    "planner": {
+      "eyebrow": "Havalimanı asistanı",
+      "title": "İstanbul Havalimanı yolculuğunuzu planlayın",
+      "subtitle": "Uçuşları takip edin, ulaşımı bulun ve terminaldeki deneyimleri keşfedin.",
+      "greeting": "Merhaba, hoş geldiniz",
+      "searchLabel": "Uçuş arayın",
+      "searchPlaceholder": "Uçuş numarası, varış noktası veya havayolu",
+      "supporting": "Herhangi bir uçuşu bulun ya da doğrudan kalkış ve geliş listelerine gidin.",
+      "searchCta": "Uçuşları ara",
+      "shortcutsLabel": "Hızlı kısayollar",
+      "secondaryHeading": "Bugün için seçilen başlıca havalimanı hizmetleri.",
+      "secondaryOverflow": "Daha fazla hizmeti havalimanı rehberinde keşfedin.",
+      "actions": {
+        "arrivals": {
+          "label": "Gelen uçuşlar",
+          "href": "https://www.istairport.com/en/passenger/flight-status?tab=arrivals",
+          "icon": "plane"
+        },
+        "departures": {
+          "label": "Giden uçuşlar",
+          "href": "https://www.istairport.com/en/passenger/flight-status?tab=departures",
+          "icon": "plane-takeoff"
+        }
+      },
+      "secondary": [
+        {
+          "label": "Ulaşım planlayıcı",
+          "href": "https://www.istairport.com/en/passenger/transport",
+          "icon": "transport"
+        },
+        {
+          "label": "Havalimanı haritası",
+          "href": "https://www.istairport.com/en/passenger/airport-map",
+          "icon": "map"
+        }
+      ],
+      "transport": {
+        "label": "Havalimanı transferi ayırt",
+        "icon": "bus-front",
+        "fallbackCta": "Servis rezervasyonu yap"
+      },
+      "heroImageAlt": "İstanbul Havalimanı terminalinde yolcular",
+      "operationsLabel": "Canlı operasyonlar",
+      "quickLinksLabel": "Hızlı bağlantılar",
+      "alertsLabel": "Anlık uyarılar"
+    },
+    "status": {
+      "title": "Durum özeti",
+      "description": "Havalimana çıkmadan önce bilmeniz gereken operasyonel başlıklar.",
+      "updated": "Güncellendi {time}",
+      "fallback": {
+        "departures": {
+          "title": "Günlük kalkışlar",
+          "unit": "uçuş"
+        },
+        "security": {
+          "title": "Güvenlik bekleme süresi",
+          "unit": "dk",
+          "trend": "Kısa süre içinde tekrar kontrol edin"
+        },
+        "parking": {
+          "title": "Otopark doluluk",
+          "unit": "kapasite",
+          "trend": "Saatlik güncellenir"
+        }
+      }
+    },
+    "journey": {
+      "beforeTitle": "Uçuştan önce",
+      "beforeDescription": "Check-in, bagaj ve premium hizmetlerle daha hızlı hazırlanın.",
+      "arrivalTitle": "Varışta",
+      "arrivalDescription": "Pasaport kontrolü, transferler ve döviz desteğini bulun.",
+      "partnerTag": "Partner"
+    },
+    "transport": {
+      "title": "Ulaşım ve otopark",
+      "description": "İstanbul’a en hızlı yolu canlı servis güncellemeleriyle seçin.",
+      "labels": {
+        "statusDetail": "Durum notu",
+        "nextDeparture": "Sonraki kalkış",
+        "frequency": "Sıklık",
+        "bookingLead": "Garantili koltuk veya park için önden ayırtın.",
+        "book": "Veriler İstanbul Havalimanı iş ortaklarından."
+      },
+      "highlight": {
+        "title": "Transfer fırsatı",
+        "cta": "Sınırlı partner teklifi"
+      },
+      "banner": {
+        "label": "Partner transferi",
+        "cta": "Transfer ayırt"
+      }
+    },
+    "pretravel": {
+      "title": "Uçuştan önce ihtiyaçlar",
+      "subtitle": "Transfer, bağlantı ve uçuş rezervasyonlarını yola çıkmadan ayarlayın.",
+      "actions": [
+        {
+          "label": "Havalimanı transferi ayırt",
+          "icon": "bus-front",
+          "match": "transport"
+        },
+        {
+          "label": "Türkiye eSIM satın al",
+          "icon": "globe",
+          "match": "sim",
+          "fallbackUrl": "https://www.esimturkey.com/"
+        },
+        {
+          "label": "İstanbul tren rezervasyonu",
+          "icon": "tram-front",
+          "match": "metro",
+          "fallbackUrl": "https://www.metro.istanbul/en"
+        },
+        {
+          "label": "Uygun uçuşları bul",
+          "icon": "plane-takeoff",
+          "match": "flight",
+          "fallbackUrl": "https://www.skyscanner.net/"
+        }
+      ]
+    },
+    "timeline": {
+      "steps": [
+        {
+          "title": "Planla",
+          "description": "Uçuşu ara, havalimanı transferini ayırt ve biniş kartını hazırla."
+        },
+        {
+          "title": "Yola çık",
+          "description": "Canlı ulaşım güncellemelerini takip et ve güvenlik kontrolünü hızlı geç."
+        },
+        {
+          "title": "Varış",
+          "description": "Döviz bürosu, devam eden ulaşım ve lounge erişim noktasını hemen bul."
+        }
+      ]
+    },
+    "highlights": {
+      "title": "Yeme & alışveriş öne çıkanlar",
+      "description": "Terminalde yemek, alışveriş ve dinlenme için seçilmiş öneriler.",
+      "meta": {
+        "price": "Başlangıç",
+        "duration": "Planlanan süre"
+      },
+      "filters": [
+        {
+          "id": "all",
+          "label": "Tümü"
+        },
+        {
+          "id": "breakfast",
+          "label": "Kahvaltı"
+        },
+        {
+          "id": "family",
+          "label": "Aile"
+        },
+        {
+          "id": "luxury",
+          "label": "Lüks"
+        },
+        {
+          "id": "dutyfree",
+          "label": "Duty free fırsatları"
+        }
+      ],
+      "spotlightLabel": "Öne çıkan"
+    },
+    "alerts": {
+      "title": "Uyarılar & duyurular",
+      "description": "Güvenlik, bakım ve seyahat bildirimlerini takip edin.",
+      "empty": "Şu anda aktif uyarı yok."
+    },
+    "flights": {
+      "title": "Kalkış özeti",
+      "description": "İstanbul'dan kalkacak sonraki uçuşları görün. Saatler yerel saat dilimindedir.",
+      "empty": "Şu anda planlanan kalkış bulunmuyor.",
+      "cta": {
+        "label": "Tüm kalkış tablosunu görüntüle",
+        "href": "/flights"
+      },
+      "headers": {
+        "flight": "Uçuş",
+        "destination": "Varış Noktası",
+        "departure": "Kalkış",
+        "status": "Durum"
+      }
+    },
+    "partners": {
+      "slotLabel": "Partner vitrin",
+      "quickLinkLabel": "Partner kampanyası",
+      "bannerLabel": "Öne çıkan partner",
+      "sectionTitle": "Özel partner fırsatları",
+      "sectionSubtitle": "İstanbul Havalimanı yolcularına özel uçuş ve duty free indirimlerini keşfedin.",
+      "viewAll": "Tüm partner tekliflerini görüntüleyin",
+      "carousel": {
+        "previous": "Önceki teklif",
+        "next": "Sonraki teklif"
+      }
+    },
+    "bands": {
+      "planAhead": {
+        "eyebrow": "Önden planlayın",
+        "title": "Yola çıkmadan hazırlanın",
+        "description": "Transferinizi, belgelerinizi ve yolculuk notlarınızı evden çıkmadan tamamlayın."
+      },
+      "planJourney": {
+        "eyebrow": "Yolculuk günü",
+        "title": "Havalimanı yolculuğunu yönetin",
+        "description": "Kapınıza sorunsuz ulaşmak için ulaşım durumunu ve adım adım rehberi takip edin."
+      },
+      "atAirport": {
+        "eyebrow": "İGA’da keşfedin",
+        "title": "Terminalde alışveriş, lezzet ve rahatlama",
+        "description": "Varışta seçilmiş deneyimleri, partner tekliflerini ve temel hizmetleri keşfedin."
+      },
+      "travelUpdates": {
+        "eyebrow": "Güncel kalın",
+        "title": "Canlı uyarılar ve uçuş güncellemeleri",
+        "description": "Planınızı hızlıca uyarlamak için operasyon duyurularını ve kalkışları izleyin."
+      }
+    }
+  },
+  "flightsPage": {
+    "eyebrow": "Uçuş araması",
+    "all": {
+      "title": "Yaklaşan tüm kalkışlar",
+      "description": "{count} kalkış listeleniyor."
+    },
+    "results": {
+      "title": "\"{query}\" için sonuçlar",
+      "description": "{count} eşleşen uçuş görüntüleniyor.",
+      "empty": "\"{query}\" için uçuş bulunamadı. Başka bir uçuş numarası veya varış noktası deneyin."
+    },
+    "form": {
+      "label": "Uçuş ara",
+      "placeholder": "Uçuş numarası, varış noktası veya durum",
+      "cta": "Uçuşları ara"
+    },
+    "back": "Ana sayfaya dön"
+  },
+  "contentManager": {
+    "title": "İçerik Yöneticisi",
+    "subtitle": "Ana sayfa modüllerini canlı CRUD işlemleriyle yönetin.",
+    "viewHistory": "Geçmişi Görüntüle",
+    "addNew": "Yeni Ekle",
+    "loading": "Yükleniyor...",
+    "noRecords": "Kayıt bulunamadı.",
+    "saveError": "İçerik kaydedilemedi. Lütfen tekrar deneyin.",
+    "deleteError": "İçerik silinemedi.",
+    "restoreError": "Bu sürüm geri yüklenemedi.",
+    "deleteConfirm": "Bu kaydı silmek istiyor musunuz?",
+    "loadError": "İçerik yüklenemedi.",
+    "actions": {
+      "edit": "Düzenle",
+      "delete": "Sil"
+    },
+    "table": {
+      "id": "ID",
+      "primaryField": "Birincil Alan",
+      "actions": "İşlemler"
+    }
+  },
+  "versionHistory": {
+    "title": "Sürüm Geçmişi",
+    "loading": "Sürüm geçmişi yükleniyor...",
+    "error": "Sürüm geçmişi yüklenemedi.",
+    "empty": "Bu bölüm için henüz bir geçmiş yok.",
+    "createdAt": "Oluşturulma: {time}",
+    "publishedAt": "Yayınlanma: {time}",
+    "byAuthor": "{author} tarafından",
+    "unknownAuthor": "Bilinmeyen kullanıcı",
+    "actions": {
+      "CREATED": "Oluşturuldu",
+      "UPDATED": "Güncellendi",
+      "DELETED": "Silindi",
+      "RESTORED": "Geri Yüklendi"
+    },
+    "restore": "Geri Yükle",
+    "restoring": "Geri Yükleniyor...",
+    "close": "Kapat"
+  },
+  "partnerManager": {
+    "title": "Partner Kampanyaları",
+    "subtitle": "Ana sayfa genelinde havayolu ve perakende promosyonlarını yönetin.",
+    "create": "Yeni kampanya",
+    "edit": "Kampanyayı düzenle",
+    "editAction": "Düzenle",
+    "deleteAction": "Sil",
+    "deleteConfirm": "\"{name}\" kampanyasını silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.",
+    "empty": "Henüz partner kampanyası yok. Havayolu fırsatlarını öne çıkarmak için yeni bir kampanya oluşturun.",
+    "loading": "Kampanyalar yükleniyor...",
+    "loadError": "Kampanyalar yüklenemedi.",
+    "deleteError": "Kampanya silinemedi. Lütfen tekrar deneyin.",
+    "saveError": "Kampanya kaydedilemedi. Lütfen alanları kontrol edin.",
+    "placements": {
+      "HERO_TILE": "Kahraman vitrini",
+      "QUICK_LINK": "Hızlı bağlantı kutusu",
+      "BANNER": "Banner şeridi",
+      "FEATURED_SECTION": "Öne çıkan kart",
+      "FOOTER_TILE": "Alt bilgi kutusu"
+    },
+    "status": {
+      "DRAFT": "Taslak",
+      "LIVE": "Yayında",
+      "PAUSED": "Durduruldu",
+      "ARCHIVED": "Arşivlendi"
+    },
+    "table": {
+      "campaign": "Kampanya",
+      "locale": "Yerel",
+      "placements": "Yerleşimler",
+      "status": "Durum",
+      "schedule": "Zamanlama"
+    }
+  },
+  "layout": {
+    "header": {
+      "brand": {
+        "name": "İstanbul Havalimanı",
+        "tagline": "Dünyaya açılan kapı.",
+        "href": "/tr"
+      },
+      "nav": [
+        {
+          "label": "Uçuşlar",
+          "href": "https://www.istairport.com/en/passenger/flight-status"
+        },
+        {
+          "label": "Havalimanına ulaşım",
+          "href": "https://www.istairport.com/en/passenger/transport"
+        },
+        {
+          "label": "Havalimanında",
+          "href": "https://www.istairport.com/en/passenger/at-the-airport"
+        },
+        {
+          "label": "Mağaza & restoran",
+          "href": "https://www.istairport.com/en/passenger/shopping"
+        },
+        {
+          "label": "Yardım & destek",
+          "href": "https://www.istairport.com/en/passenger/faq"
+        }
+      ],
+      "utility": [
+        {
+          "label": "Seyahat uyarıları",
+          "href": "#alerts",
+          "icon": "alert-triangle"
+        },
+        {
+          "label": "İletişim",
+          "href": "https://www.istairport.com/en/passenger/contact",
+          "icon": "phone"
+        },
+        {
+          "label": "Erişilebilirlik",
+          "href": "https://www.istairport.com/en/passenger/accessibility",
+          "icon": "accessibility"
+        },
+        {
+          "label": "Dil",
+          "href": "#language",
+          "icon": "globe"
+        }
+      ],
+      "cta": {
+        "label": "Otopark rezervasyonu",
+        "href": "https://www.istairport.com/en/passenger/parking"
+      },
+      "instantAlerts": {
+        "label": "Anlık uyarılar",
+        "viewAll": {
+          "label": "Tümünü gör",
+          "href": "#alerts"
+        }
+      }
+    },
+    "footer": {
+      "brand": {
+        "name": "İstanbul Havalimanı Rehberi",
+        "description": "İstanbul yolculuğunuzu canlı operasyon verileri, ulaşım seçenekleri ve seçilmiş terminal önerileriyle planlayın."
+      },
+      "newsletter": {
+        "title": "Güncel kalın",
+        "description": "Operasyon uyarılarını, partner tekliflerini ve hatırlatmaları e-posta kutunuza alın.",
+        "cta": "Abone ol",
+        "disclaimer": "Dilediğiniz zaman abonelikten çıkabilirsiniz."
+      },
+      "social": [
+        {
+          "label": "Instagram",
+          "href": "https://www.instagram.com/igairport",
+          "icon": "instagram"
+        },
+        {
+          "label": "Twitter",
+          "href": "https://twitter.com/igairport",
+          "icon": "twitter"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://www.youtube.com/@igairport",
+          "icon": "youtube"
+        }
+      ],
+      "columns": [
+        {
+          "title": "Yolculuğu planla",
+          "links": [
+            {
+              "label": "Uçuş durumu",
+              "href": "https://www.istairport.com/en/passenger/flight-status",
+              "icon": "plane"
+            },
+            {
+              "label": "Otopark ayırt",
+              "href": "https://www.istairport.com/en/passenger/parking",
+              "icon": "parking-circle"
+            },
+            {
+              "label": "Fast Track güvenlik",
+              "href": "https://www.istairport.com/en/passenger/fast-track",
+              "icon": "shield-check"
+            }
+          ]
+        },
+        {
+          "title": "Havalimanına ulaşım",
+          "links": [
+            {
+              "label": "Havalimanı otobüsleri",
+              "href": "https://www.istairport.com/en/passenger/transport/bus",
+              "icon": "bus-front"
+            },
+            {
+              "label": "Metro & raylı sistem",
+              "href": "https://www.metro.istanbul/en",
+              "icon": "tram-front"
+            },
+            {
+              "label": "Taksi & çağırma uygulamaları",
+              "href": "https://www.istairport.com/en/passenger/taxi",
+              "icon": "car"
+            }
+          ]
+        },
+        {
+          "title": "Havalimanında",
+          "links": [
+            {
+              "label": "Terminal haritaları",
+              "href": "https://www.istairport.com/en/passenger/airport-map",
+              "icon": "map"
+            },
+            {
+              "label": "Lounge'lar",
+              "href": "https://www.istairport.com/en/passenger/lounge-services",
+              "icon": "armchair"
+            },
+            {
+              "label": "Alışveriş & yeme-içme",
+              "href": "https://www.istairport.com/en/passenger/shopping",
+              "icon": "shopping-bag"
+            }
+          ]
+        },
+        {
+          "title": "Destek",
+          "links": [
+            {
+              "label": "Yardım merkezi",
+              "href": "https://www.istairport.com/en/passenger/faq",
+              "icon": "life-buoy"
+            },
+            {
+              "label": "Kayıp eşya",
+              "href": "https://www.istairport.com/en/passenger/lost-found",
+              "icon": "search"
+            },
+            {
+              "label": "Müşteri hizmetleri",
+              "href": "https://www.istairport.com/en/passenger/contact",
+              "icon": "message-circle"
+            }
+          ]
+        }
+      ],
+      "legal": {
+        "rights": "© {year} İstanbul Havalimanı. Tüm hakları saklıdır.",
+        "links": [
+          {
+            "label": "Gizlilik politikası",
+            "href": "https://www.istairport.com/en/privacy-policy"
+          },
+          {
+            "label": "Kullanım koşulları",
+            "href": "https://www.istairport.com/en/terms-of-use"
+          },
+          {
+            "label": "Erişilebilirlik",
+            "href": "https://www.istairport.com/en/passenger/accessibility"
+          }
+        ]
+      }
+    }
+  }
+}

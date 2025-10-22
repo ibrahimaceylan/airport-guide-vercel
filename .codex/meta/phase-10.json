@@ -1,0 +1,16 @@
+{
+  "phase": "10",
+  "title": "Homepage Experience Refresh",
+  "branch": "development",
+  "status": "completed",
+  "deliverables": [
+    "Planner strip with arrivals/departures CTAs",
+    "Status snapshot cards with CMS overrides",
+    "Journey guidance modules with partner CTAs",
+    "Transport and parking tabbed hub",
+    "Dining and shopping highlights grid with filters",
+    "Alerts banner and anchored partner carousel",
+    "Design token updates for gradients, cards, and icons",
+    "scripts/verify-phase10.sh"
+  ]
+}

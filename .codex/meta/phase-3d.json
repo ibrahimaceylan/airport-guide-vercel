@@ -1,0 +1,7 @@
+{
+  "phase": "3D",
+  "branch": "phase-3-flights-transport",
+  "title": "Modern Dashboard Layout + Shared Admin Shell",
+  "description": "Introduces clean admin shell with sidebar, topbar, and card components. Light theme and modular layout for dashboard.",
+  "createdAt": "Sun 19 Oct 2025 22:56:18 BST"
+}

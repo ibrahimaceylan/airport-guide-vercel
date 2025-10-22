@@ -1,36 +1,75 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# ──────────────────────────────
+# Base Ignore Patterns
+# ──────────────────────────────
 
 # dependencies
-/node_modules
+/node_modules/
 /.pnp
-.pnp.js
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
 
 # testing
-/coverage
+/coverage/
 
-# next.js
+# next.js build output
 /.next/
 /out/
 
-# production
-/build
+# production build
+/build/
+/dist/
 
 # misc
 .DS_Store
 *.pem
 
-# debug
+# debug logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.pnpm-debug.log*
 
-# local env files
-.env*.local
-.env
+# environment
+.env*
+!.env.example
 
 # vercel
-.vercel
+.vercel/
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# IDE metadata
+.idea/
+*.swp
+
+# ──────────────────────────────
+# Codex & Workspace
+# ──────────────────────────────
+
+# Ignore Codex caches but keep meta JSON
+.codex/*
+!.codex/
+!.codex/meta/
+!.codex/**/*.json
+!.codex/summary.json
+
+# Ignore VS Code internals but keep workspace settings
+.vscode/*
+!.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# Allow Git, Lint, Prettier, and Config files
+!.gitignore
+!.gitattributes
+!.eslintrc.json
+!.prettierrc
+!.yarnrc

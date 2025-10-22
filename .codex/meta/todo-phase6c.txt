@@ -1,0 +1,1 @@
+# Enhancement notes: add BarChart and error handling in AnalyticsPanel.tsx

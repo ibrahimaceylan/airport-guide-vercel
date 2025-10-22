@@ -1,0 +1,9 @@
+{
+  "phase": "4A",
+  "branch": "phase-4-localization-ui",
+  "title": "Phase 4A — next-intl Integration + Language Toggle",
+  "description": "Implements multilingual routing (EN/TR) via next-intl with Topbar language switch.",
+  "status": "in-progress",
+  "dependsOn": "phase-4",
+  "createdAt": "Sun 19 Oct 2025 23:58:37 BST"
+}

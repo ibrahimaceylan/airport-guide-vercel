@@ -1,0 +1,15 @@
+{
+  "phase": "1-C",
+  "name": "Login & Register UI Integration",
+  "branch": "phase-1-single-site-setup",
+  "verifiedBy": "scripts/verify-phase1c.sh",
+  "dependencies": ["react-hook-form", "next-auth", "bcryptjs"],
+  "status": "in-progress",
+  "objectives": [
+    "Implement login/register pages with React Hook Form",
+    "Connect to NextAuth Credentials",
+    "Add API route for user registration",
+    "Verify UI components and form behavior"
+  ],
+  "lastUpdated": "$(date)"
+}

@@ -1,0 +1,48 @@
+{
+  "project": "Istanbul Airport Guide (v2)",
+  "branch": "development",
+  "phase": "10",
+  "phaseName": "Homepage Experience Refresh",
+  "status": "completed",
+  "lastUpdated": "Wed Oct 22 2025",
+  "maintainer": "Ibrahim Ceylan",
+  "packageManager": "yarn",
+  "includedMeta": [
+    ".codex/meta/project.json",
+    ".codex/meta/version.json",
+    ".codex/meta/phase-10.json",
+    ".codex/meta/dev-automation.json"
+  ],
+  "verificationScripts": [
+    "scripts/verify-phase10.sh",
+    "scripts/verify-phase9.sh",
+    "scripts/verify-phase8.sh"
+  ],
+  "deliverables": {
+    "phase-10": "Homepage planner strip, status snapshot, journey guidance, transport tabs, highlights grid, alerts banner, and partner carousel refresh.",
+    "phase-9": "Partnership placements, campaign analytics, and monetization reporting.",
+    "phase-8": "Versioned CMS workflow and Vercel deployment pipeline.",
+    "phase-7": "Admin CRUD for homepage content modules with role-based access.",
+    "phase-6": "Analytics dashboards with SWR data fetching and charting.",
+    "phase-5": "Localization UI refinements and language switcher polish.",
+    "phase-4": "Full EN/TR/AR localization with RTL support via next-intl.",
+    "phase-3": "Flights data services and on-ground transport widgets.",
+    "phase-2": "Admin/editor dashboards with modular card layout.",
+    "phase-1": "Base Next.js 14 scaffold with Prisma, NextAuth, Tailwind, and Codex automation."
+  },
+  "summary": {
+    "completed": [
+      "Phase 10 homepage refresh merged to development with localized planner, status snapshot, journey guidance, transport tabs, highlights, alerts, and anchored partner carousel.",
+      "Content, analytics, localization, and deployment tracks from Phases 1-9 remain intact after the refresh and continue to power the merged experience.",
+      "Codex metadata, roadmap snapshots, and verification scripts are aligned with the development branch baseline."
+    ],
+    "pending": [
+      "Define scope for the next milestone beyond Phase 10 (e.g., personalization or real-time data integrations)."
+    ]
+  },
+  "nextSteps": [
+    "QA the refreshed homepage across locales and breakpoints before promoting to production.",
+    "Coordinate with data providers to replace remaining static fallbacks for status metrics and transport feeds.",
+    "Draft Phase 11 roadmap entry once the next initiative is prioritized."
+  ]
+}

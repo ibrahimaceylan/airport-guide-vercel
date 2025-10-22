@@ -1,0 +1,10 @@
+{
+  "version": "1.10.0",
+  "phase": "Phase 10 — Homepage Experience Refresh",
+  "docs": {
+    "phase": "docs/phase-10.md",
+    "roadmap": "docs/project-roadmap.md",
+    "snapshot": "docs/versions/roadmap-v1.10.0.md"
+  },
+  "notes": "Kickstarting the homepage refresh with planner strip, operational snapshot, journey guidance, transport hub, highlights, alerts, and partner integration."
+}

@@ -1,0 +1,13 @@
+{
+  "phase": "6",
+  "title": "Advanced Modules (Flights API + Real-Time Transport)",
+  "branch": "phase-6-advanced-modules",
+  "docs": "docs/phase-6.md",
+  "verify_script": "scripts/verify-phase6.sh",
+  "status": "in-progress",
+  "objectives": [
+    "Integrate external flight API",
+    "Add real-time transport updates",
+    "Implement loaders and status badges"
+  ]
+}

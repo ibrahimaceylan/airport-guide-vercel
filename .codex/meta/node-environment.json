@@ -1,0 +1,13 @@
+{
+  "phase": "environment",
+  "name": "Node Environment Baseline",
+  "branch": "phase-1-single-site-setup",
+  "verifiedBy": "scripts/verify-node.sh",
+  "requiredNode": "20.19.0",
+  "status": "complete",
+  "objectives": [
+    "Ensure local Node version matches Codex baseline",
+    "Prevent engine incompatibility with future packages"
+  ],
+  "lastUpdated": "$(date)"
+}

@@ -1,0 +1,10 @@
+#!/bin/bash
+echo "[Dev Environment Verification]"
+test -f .prettierrc && echo "✅ Prettier config found"
+test -f .eslintrc.json && echo "✅ ESLint config found"
+test -f .vscode/settings.json && echo "✅ VSCode settings found"
+test -f .gitattributes && echo "✅ Git attributes found"
+echo "→ Checking lint packages"
+yarn list --pattern prettier | grep prettier && echo "✅ Prettier installed"
+yarn list --pattern eslint | grep eslint && echo "✅ ESLint installed"
+echo "Verification complete."

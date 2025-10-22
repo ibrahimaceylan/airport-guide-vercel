@@ -1,0 +1,14 @@
+{
+  "script": "scripts/verify-phase4.sh",
+  "phase": "4",
+  "purpose": "Ensure i18n setup and Tailwind 4 readiness",
+  "checks": [
+    "Codex meta file exists",
+    "Tailwind configuration present",
+    "Next.js version compatibility",
+    "i18n dependencies installed",
+    "Locales folder verified",
+    "Topbar includes language toggle placeholder"
+  ],
+  "createdAt": "Sun 19 Oct 2025 23:58:37 BST"
+}

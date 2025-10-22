@@ -1,0 +1,27 @@
+{
+  "phase": "4",
+  "branch": "phase-4-localization-ui",
+  "title": "Phase 4 — Localization + UI Polish",
+  "description": "Introduce multi-language support (EN/TR) and refine UI elements with enhanced accessibility, transitions, and usability improvements.",
+  "status": "pending",
+  "plannedTasks": [
+    "Set up i18n configuration using Next.js international routing",
+    "Add language toggle (EN/TR) in Topbar",
+    "Localize text in Flights and Transport modules",
+    "Refine card components with hover and transition effects",
+    "Improve typography and spacing using Tailwind utilities",
+    "Add breadcrumb and contextual header in dashboard layout"
+  ],
+  "dependencies": [
+    "next-intl",
+    "tailwindcss",
+    "react-hook-form"
+  ],
+  "expectedDeliverables": [
+    "Multilingual admin dashboard (EN/TR)",
+    "Polished dashboard UI with enhanced clarity",
+    "Phase 4 documentation summary (docs/phase-4.md)"
+  ],
+  "nextPhase": "Phase 5 — Content Management & Publishing",
+  "createdAt": "Sun 19 Oct 2025 23:58:37 BST"
+}

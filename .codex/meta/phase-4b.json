@@ -1,0 +1,9 @@
+{
+  "phase": "4B",
+  "branch": "phase-4-localization-ui",
+  "title": "Phase 4B — Add Arabic Language (RTL Support)",
+  "description": "Extends next-intl configuration to include Arabic (ar) with right-to-left layout and translation support.",
+  "status": "in-progress",
+  "dependsOn": "phase-4a",
+  "createdAt": "Mon 20 Oct 2025 00:02:00 BST"
+}

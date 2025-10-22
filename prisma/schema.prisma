@@ -1,0 +1,260 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model User {
+  id        Int      @id @default(autoincrement())
+  name      String?
+  email     String   @unique
+  password  String
+  role      Role     @default(USER)
+  createdAt DateTime @default(now())
+
+  sectionVersions SectionVersion[] @relation("SectionVersionAuthor")
+}
+
+enum Role {
+  ADMIN
+  EDITOR
+  USER
+}
+
+enum SectionType {
+  HERO
+  QUICK_LINK
+  HIGHLIGHT
+  TRANSPORT
+  AT_AIRPORT
+  CTA_STRIP
+  STATUS_METRIC
+  JOURNEY_TILE
+  ALERT
+}
+
+enum VersionAction {
+  CREATED
+  UPDATED
+  DELETED
+  RESTORED
+}
+
+enum CampaignStatus {
+  DRAFT
+  LIVE
+  PAUSED
+  ARCHIVED
+}
+
+enum CampaignPlacementType {
+  HERO_TILE
+  QUICK_LINK
+  BANNER
+  FEATURED_SECTION
+  FOOTER_TILE
+}
+
+enum StatusMetricType {
+  DAILY_DEPARTURES
+  SECURITY_WAIT
+  PARKING_AVAILABILITY
+}
+
+enum JourneyStage {
+  BEFORE_FLIGHT
+  ON_ARRIVAL
+}
+
+enum AlertSeverity {
+  INFO
+  WARNING
+  CRITICAL
+}
+
+model Flight {
+  id          Int      @id @default(autoincrement())
+  flightNo    String
+  destination String
+  status      String
+  departure   DateTime
+  createdAt   DateTime @default(now())
+}
+
+// ------------------------------------------
+// Phase 7: Homepage Section Models
+// ------------------------------------------
+model Hero {
+  id        Int      @id @default(autoincrement())
+  title     String
+  subtitle  String
+  imageUrl  String
+  ctaText   String?
+  ctaLink   String?
+}
+
+model QuickLink {
+  id    Int    @id @default(autoincrement())
+  label String
+  icon  String
+  url   String
+}
+
+model Highlight {
+  id          Int      @id @default(autoincrement())
+  title       String
+  description String
+  imageUrl    String
+  category    String?
+  tags        String?
+  spotlight   Boolean  @default(false)
+}
+
+model Transport {
+  id          Int      @id @default(autoincrement())
+  mode        String
+  status      String
+  description String
+  iconUrl     String
+  badgeText   String?
+  nextDeparture String?
+  frequency   String?
+  ctaText     String?
+  ctaUrl      String?
+  sortOrder   Int      @default(0)
+}
+
+model AtAirport {
+  id          Int      @id @default(autoincrement())
+  name        String
+  category    String
+  description String
+  imageUrl    String
+}
+
+model CTAStrip {
+  id         Int    @id @default(autoincrement())
+  title      String
+  subtitle   String
+  buttonText String
+  buttonUrl  String
+}
+
+model StatusMetric {
+  id         Int               @id @default(autoincrement())
+  type       StatusMetricType
+  title      String
+  metric     String
+  unit       String?
+  trendLabel String?
+  trendValue String?
+  icon       String?
+  locale     String?           @default("all")
+  override   Boolean           @default(false)
+  active     Boolean           @default(true)
+  sortOrder  Int               @default(0)
+  updatedAt  DateTime          @default(now())
+}
+
+model JourneyTile {
+  id          Int          @id @default(autoincrement())
+  stage       JourneyStage
+  title       String
+  description String
+  icon        String
+  ctaLabel    String?
+  ctaUrl      String?
+  partnerSlug String?
+  locale      String?       @default("all")
+  active      Boolean       @default(true)
+  sortOrder   Int           @default(0)
+}
+
+model Alert {
+  id          Int           @id @default(autoincrement())
+  title       String
+  message     String
+  severity    AlertSeverity @default(INFO)
+  ctaLabel    String?
+  ctaUrl      String?
+  locale      String?       @default("all")
+  dismissible Boolean       @default(true)
+  active      Boolean       @default(true)
+  startAt     DateTime?
+  endAt       DateTime?
+  createdAt   DateTime      @default(now())
+}
+
+// ------------------------------------------
+// Phase 8: Versioning
+// ------------------------------------------
+model SectionVersion {
+  id             Int            @id @default(autoincrement())
+  section        SectionType
+  recordId       Int?
+  data           Json
+  action         VersionAction
+  publishedAt    DateTime?
+  restoredFromId Int?
+  createdAt      DateTime       @default(now())
+  createdBy      Int?
+
+  author       User?            @relation("SectionVersionAuthor", fields: [createdBy], references: [id])
+  restoredFrom SectionVersion?  @relation("VersionRestoredFrom", fields: [restoredFromId], references: [id])
+  restorations SectionVersion[] @relation("VersionRestoredFrom")
+
+  @@index([section])
+}
+
+model PartnerCampaign {
+  id            Int                   @id @default(autoincrement())
+  name          String
+  slug          String                @unique
+  headline      String
+  subheadline   String?
+  imageUrl      String?
+  ctaText       String
+  destinationUrl String
+  utmSource     String?
+  utmMedium     String?
+  utmCampaign   String?
+  locale        String                @default("en")
+  status        CampaignStatus        @default(DRAFT)
+  startDate     DateTime?
+  endDate       DateTime?
+  createdAt     DateTime              @default(now())
+  updatedAt     DateTime              @updatedAt
+
+  placements    CampaignPlacement[]
+  clicks        CampaignClickEvent[]
+}
+
+model CampaignPlacement {
+  id         Int                    @id @default(autoincrement())
+  campaignId Int
+  placement  CampaignPlacementType
+  sortOrder  Int                    @default(0)
+  createdAt  DateTime               @default(now())
+
+  campaign   PartnerCampaign        @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+
+  @@index([campaignId, placement])
+}
+
+model CampaignClickEvent {
+  id         Int                    @id @default(autoincrement())
+  campaignId Int
+  placement  CampaignPlacementType
+  locale     String
+  referrer   String?
+  userAgent  String?
+  createdAt  DateTime               @default(now())
+
+  campaign   PartnerCampaign        @relation(fields: [campaignId], references: [id], onDelete: Cascade)
+
+  @@index([campaignId, placement, createdAt])
+  @@index([createdAt])
+}

@@ -1,0 +1,14 @@
+{
+  "phase": "1-B",
+  "name": "Prisma + Auth + Middleware",
+  "branch": "phase-1-single-site-setup",
+  "dependsOn": "phase-1",
+  "verifiedBy": "scripts/verify-phase1b.sh",
+  "status": "in-progress",
+  "packageManager": "yarn",
+  "objectives": [
+    "Connect Prisma client",
+    "Implement NextAuth Credentials provider",
+    "Add role-based middleware for Admin and Editor"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "phase": "6B",
+  "title": "Live API Integration + Analytics Panel",
+  "branch": "phase-6b-liveapi-analytics",
+  "docs": "docs/phase-6b.md",
+  "verify_script": "scripts/verify-phase6b.sh",
+  "status": "completed",
+  "objectives": [
+    "Connect real API endpoints",
+    "Add Analytics Panel for admin dashboard",
+    "Visualize live flight and transport data"
+  ],
+  "deliverables": [
+    "Live API connection for flights and transport",
+    "AnalyticsPanel with SWR refresh and Recharts visuals",
+    "Integrated admin analytics dashboard",
+    "Environment variables for external API URLs"
+  ]
+}
